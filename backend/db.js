@@ -2,7 +2,7 @@ const pg = require('pg');
 
 const client = new pg.Client('postgres://localhost/postgres');
 
-const connect = ()=> {
+const connect = () => {
   client.connect((err) => {
     if(!err) {
       console.log("no errr");
@@ -37,6 +37,7 @@ const end = () => {
     }
   })
 }
+
 module.exports = {
   connect,
   getCoins,
